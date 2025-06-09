@@ -5,19 +5,16 @@ import numpy as np
 import cv2
 
 st.set_page_config(
-    page_title="Deteksi Objek Multi-Model YOLO",
+    page_title="Deteksi Rambu Jalan Multi-Model YOLO",
     page_icon="🤖",
     layout="wide"
 )
 
 # --- Judul dan Deskripsi ---
-st.title("🚀 Aplikasi Deteksi Objek dengan Multi-Model YOLO")
+st.title("🚀 Aplikasi Deteksi Objek Rambu Jalan dengan Multi-Model YOLO")
 st.write("Pilih model, unggah gambar, dan biarkan AI mendeteksi objek untuk Anda.")
 
 # --- Pilihan Model ---
-# Buat daftar model yang bisa dipilih.
-# Kunci (key) adalah nama yang akan ditampilkan di UI.
-# Nilai (value) adalah path ke file model.
 MODEL_DICT = {
     "YOLOv11": "best-yolov11.pt",
     "YOLOv12": "best-YOLOv12.pt",
@@ -32,8 +29,6 @@ model_name = st.selectbox(
 model_path = MODEL_DICT[model_name]
 
 # --- Memuat Model YOLO dengan Caching ---
-# @st.cache_resource digunakan agar model tidak perlu di-load ulang setiap kali 
-# ada interaksi user, sehingga lebih cepat dan hemat memori.
 @st.cache_resource
 def load_yolo_model(path):
     """Memuat model YOLO dari path yang diberikan."""
