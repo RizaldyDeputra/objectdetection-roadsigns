@@ -51,8 +51,8 @@ def detect_objects(image, model_to_use):
     Menerima gambar PIL, melakukan deteksi dengan model yang diberikan, 
     dan mengembalikan gambar dengan bounding box.
     """
-    img_array = np.array(image)
-    results = model_to_use(img_array)
+    
+    results = model_to_use(image)
     annotated_image_bgr = results[0].plot()
     annotated_image_rgb = cv2.cvtColor(annotated_image_bgr, cv2.COLOR_BGR2RGB)
     return annotated_image_rgb
