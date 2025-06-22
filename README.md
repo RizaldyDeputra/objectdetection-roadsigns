@@ -1,25 +1,24 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# 🚦 Road Sign Detection Web App (YOLOv11 vs YOLOv12)
 
-Description of the app ...
+A Streamlit-based web application that detects and classifies road signs using two object detection models: **YOLOv11** and **YOLOv12**. Users can upload an image, run detection, and compare the performance of both models.
 
-## Demo App
+---
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+## 🔍 Features
 
-## GitHub Codespaces
+- Upload and preview road sign images
+- Perform object detection using **YOLOv11** and **YOLOv12**
+- Compare detection results visually
+- Display bounding boxes, class labels, confidence scores
+- Easy web-based interface via Streamlit
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+---
 
-## Section Heading
+## 🚧 Use Case
 
-This is filler text, please replace this with text for this section.
+This application is useful for:
 
-## Further Reading
+- Comparing model (YOLOv11 vs YOLOv12)
+- Demonstrating deep learning-based object detection
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+
